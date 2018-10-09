@@ -1,0 +1,16 @@
+﻿@page
+@model AboutModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h2>@ViewData["Title"]</h2> 
+
+<div class="container">
+   <input id="txtEmail" type="email" placeholder="email">
+   <input id="txtPassword" type="password" placeholder="password">
+   <button id="btnLogin" class="btn btn-action btn-dark btn-sm">Login</button>
+   <button id="btnSignUp" class="btn btn-action btn-dark btn-sm">Sign up</button>   
+   <button id="btnLogout" class="btn btn-action btn-dark btn-sm hide">Logout</button>
+</div>
+

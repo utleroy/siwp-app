@@ -1,0 +1,60 @@
+@page
+@model siwp_app.Pages.Screens.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Screens</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Screens.ID" />
+            <div class="form-group">
+                <label asp-for="Screens.ScreenName" class="control-label"></label>
+                <input asp-for="Screens.ScreenName" class="form-control" />
+                <span asp-validation-for="Screens.ScreenName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Screens.ScreenLocation" class="control-label"></label>
+                <input asp-for="Screens.ScreenLocation" class="form-control" />
+                <span asp-validation-for="Screens.ScreenLocation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Screens.Orientation" class="control-label"></label>
+                <input asp-for="Screens.Orientation" class="form-control" />
+                <span asp-validation-for="Screens.Orientation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Screens.MeshCount" class="control-label"></label>
+                <input asp-for="Screens.MeshCount" class="form-control" />
+                <span asp-validation-for="Screens.MeshCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Screens.Quanity" class="control-label"></label>
+                <input asp-for="Screens.Quanity" class="form-control" />
+                <span asp-validation-for="Screens.Quanity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Screens.Notes" class="control-label"></label>
+                <input asp-for="Screens.Notes" class="form-control" />
+                <span asp-validation-for="Screens.Notes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

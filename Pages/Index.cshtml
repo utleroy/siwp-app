@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        <h2>Order Supplies</h2>
+        <ul>
+            <li>Add Items to Supply Order</li>
+            <li><a asp-page="/Supply/Index">Start new order</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>Screen Inventory List</h2>
+        <ul>
+            <li>View and Edit Screen Inventory</li>
+            <li><a asp-page="/Screens/Index">Add or Update</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-3">
+    </div>
+</div>
+
+
+
+
+

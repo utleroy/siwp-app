@@ -1,0 +1,55 @@
+@page
+@model siwp_app.Pages.Screens.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Screens</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Screens.ScreenName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Screens.ScreenName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Screens.ScreenLocation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Screens.ScreenLocation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Screens.Orientation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Screens.Orientation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Screens.MeshCount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Screens.MeshCount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Screens.Quanity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Screens.Quanity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Screens.Notes)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Screens.Notes)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Screens.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
